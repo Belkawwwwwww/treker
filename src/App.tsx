@@ -1,12 +1,7 @@
-import { FC } from "react";
-import ChartComponent from "./features/graph/ui";
+import { Main } from "./1_pages/Main";
 
-export const App: FC = () => {
-  return (
-    <div>
-      <ChartComponent />
-    </div>
-  );
+export const App = () => {
+  return <Main />;
 };
 
 export default App;

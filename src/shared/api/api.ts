@@ -2,7 +2,7 @@ type TokenResponse = {
   token: string;
   refresh_token: string;
 };
-const fetchToken = async (): Promise<{
+export const fetchToken = async (): Promise<{
   access: string;
   refresh: string;
 } | void> => {
@@ -35,7 +35,9 @@ const fetchToken = async (): Promise<{
   }
 };
 
-const fetchChartData = async (authToken: string): Promise<any | void> => {
+export const fetchChartData = async (
+  authToken: string
+): Promise<any | void> => {
   try {
     const response = await fetch(
       "https://sputnic.tech/mobile_api/getRoutesPoint",
