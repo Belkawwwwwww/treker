@@ -1,7 +1,12 @@
-import React from "react";
+import { FC } from "react";
+import ChartComponent from "./features/graph/ui";
 
-function App() {
-  return <></>;
-}
+export const App: FC = () => {
+  return (
+    <div>
+      <ChartComponent />
+    </div>
+  );
+};
 
 export default App;
